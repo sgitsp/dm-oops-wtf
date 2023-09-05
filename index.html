@@ -1,1 +1,23 @@
-DM to oops.wtf...
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DM to oops.wtf...</title>
+    DM to oops.wtf...
+    <script>
+        function redirect () {
+            // Get the query string from the URL
+            var query = window.location.search.substring(1);
+            var url = "https://simplex.chat/contact#/?v=1-4&smp=smp%3A%2F%2Fhejn2gVIqNU6xjtGM3OwQeuk8ZEbDXVJXAlnSBJBWUA%3D%40smp16.simplex.im%2FoE4XJb_lW8PhqO8A4htbsq2gZcTYmAHE%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAZlhrNXF1Esj0D9XZqlhAmzBi37xWcj2cAzmvf8U9lwI%253D%26srv%3Dp3ktngodzi6qrf7w64mmde3syuzrv57y55hxabqcq3l5p6oi7yzze6qd.onion";
+            // If the query string is not empty, append it to the URL
+            if (query.length > 0) {
+                url += "?" + query;
+            }
+
+            // Redirect to the new URL
+            window.location = url;
+        }
+
+        // On page ready, redirect to the new URL
+        window.onload = redirect;
+    </script>
+</html>
